@@ -1,8 +1,9 @@
+def mavenHome = tool name: '3.9.9'
 def call(String stageName){
   
   if ("${stageName}" == "Build")
      {
-       sh "tool name: '3.9.9'/bin/mvn clean package"
+       sh "mvn clean package"
      }
   else if ("${stageName}" == "SonarQube Report")
      {

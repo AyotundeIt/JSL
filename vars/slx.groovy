@@ -1,4 +1,3 @@
-tools {'3.9.9'}
 def call(String stageName){
   
   if ("${stageName}" == "Build")

@@ -1,4 +1,4 @@
-def maven = tool name: '3.9.9'
+tools {'3.9.9'}
 def call(String stageName){
   
   if ("${stageName}" == "Build")
